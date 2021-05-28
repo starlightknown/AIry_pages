@@ -1,8 +1,77 @@
+/* Global scroll Behaviour */
+html {
+  scroll-behavior: smooth;
+}
+/* css variables  */
+:root {
+  --primaryCol: #cc0014;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #d4c7c7;
+  --mainSpacing: 0.25rem;
+  --mainTransition: all 0.3s linear;
+  --lightShadow: 2px 5px 3px 0 rgba(0, 0, 0, 0.25);
+  --darkShadow: 4px 10px 6px 0 rgba(0, 0, 0, 0.5);
+}
+/* reset  */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+  font-size: 1rem;
+  color: #000;
+  background-color: var(--offWhite);
+}
+/* title  */
+.title-wrapper {
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  height: 2.6rem;
+}
+
+.title {
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  margin: 0 auto;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  font-size: 2.6rem;
+}
+.subtitle {
+  color: var(--primaryCol);
+  margin-left: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Russo One';
+}
+
+.section-center {
+  width: 85vw;
+  margin: 4rem auto 2rem auto;
+  max-width: 1170px;
+}
+
+/* clearfix */
+.clearfix::after,
+.clearfix::before {
+  content: '';
+  clear: both;
+  display: table;
+}
 /* ********services section ******** */
 .services {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   min-height: 100vh;
   background: #232427;
@@ -20,7 +89,7 @@
 .services-card {
   position: relative;
   min-width: 250px;
-  height: 440px;
+  height: 370px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
@@ -67,15 +136,6 @@
   transform: rotateY(180deg);
 }
 
-.serv-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-}
 .serv-container::before {
   content: '';
   position: absolute;
@@ -140,7 +200,6 @@
 
 .card-text {
   color: lightseagreen;
-
   line-height: 2rem;
   font-size: 16px;
   font-weight: 600;
@@ -152,11 +211,13 @@
 .hover_btn {
   position: relative;
   display: inline-block;
+  width: 10rem;
   padding: 8px 20px;
   background: #000;
   margin-top: 15px;
   border-radius: 20px;
   font-weight: 400;
+  text-decoration: none;
   color: var(--mainWhite);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -169,6 +230,9 @@
 }
 .services-card:nth-child(3) a {
   background: #97dc47;
+}
+.services-card:nth-child(4) a {
+  background: #e2321b;
 }
 
 @media screen and (min-width: 759px) {
