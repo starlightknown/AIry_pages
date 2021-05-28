@@ -1,0 +1,13 @@
+body {
+  cursor: url(http://seanchu.actonservice.com/cdnr/94/acton/attachment/17373/f-002b/1/-/-/-/-/QuillUp.png), default !important;
+}
+
+div {
+  font-size: 18pt;
+  font-family: aquilinetworegular, papyrus, serif;
+}
+
+.a:hover {
+  color: #AAAAAA;
+  cursor: url(http://seanchu.actonservice.com/cdnr/94/acton/attachment/17373/f-002b/1/-/-/-/-/QuillUp.png), auto;
+}
