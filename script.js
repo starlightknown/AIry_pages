@@ -77,6 +77,8 @@ $(".a").on("click", function(e) {
     $("#cs3").delay(3500).fadeIn(2000, function() {
       $("#cs3").delay(2000).fadeOut(2000, function() {
         $("#cs4").delay(3500).fadeIn(2000, function() {
+          var audio = new Audio('https://dl.dropbox.com/s/bs640vy38tsvmk4/Hedwig%27s%20Theme.mp3');
+          audio.play();
           $("#cs4").delay(3000).fadeOut(2000, function() {
             $("#div3").delay(3000).fadeIn(5000)
           })

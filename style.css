@@ -1,5 +1,5 @@
 body {
-  cursor: url(https://raw.githubusercontent.com/starlightknown/AIry_pages/main/quill.png), default !important;
+  cursor: url(quill.png), default !important;
 }
 
 div {
@@ -9,5 +9,5 @@ div {
 
 .a:hover {
   color: #AAAAAA;
-  cursor: url(https://raw.githubusercontent.com/starlightknown/AIry_pages/main/quill.png), auto;
+  cursor: url(quill.png), auto;
 }
