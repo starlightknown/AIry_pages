@@ -68,7 +68,7 @@ body {
   transform: rotateX(90deg);
 }
 .book.open {
-  transform: rotateX(35deg) rotateY(0deg) rotateZ(-35deg);
+  transform: rotateX(35deg) rotateY(0deg) rotateZ(-25deg);
 }
 .book .paper,
 .book .shadow {
@@ -167,37 +167,65 @@ body {
   background-size: 100% 1.5em;
 }
 .book .paper:not(.first) .back {
-  background: url(../memoji-2.png) center fixed no-repeat;
-  background-size: 300px 300px;
+  background: #ef9a9a;
 }
 .book .open.second .back {
+  background: url(../images/angry.jpg) center/cover no-repeat;
+  background-size: 300px 300px;
   transform: translateZ(-1px);
 }
 .book .open.third .back {
+  background: url(../images/funny.jpg) center/cover no-repeat;
+  background-size: 300px 500px;
   transform: translateZ(-2px);
 }
+.book .open.fourth .back {
+  background: url(../images/sad.jpg) center/cover no-repeat;
+  background-size: 300px 300px;
+  transform: translateZ(-3px);
+}
+.book .open.fifth .back {
+  background: url(../images/surprised.jpg) center/cover no-repeat;
+  background-size: 300px 300px;
+  transform: translateZ(-4px);
+}
+.book .open.sixth.back {
+  transform: translateZ(-5px);
+}
 .book .paper.first {
-  z-index: 8;
+  z-index: 10;
 }
 .book .paper.second {
-  z-index: 7;
+  z-index: 9;
 }
 .book .paper.third {
-  z-index: 6;
+  z-index: 8;
 }
 .book .paper.fourth {
+  z-index: 7;
+}
+.book .paper.sixth {
+  z-index: 6;
+}
+.book .paper.fifth {
   z-index: 5;
 }
 .book .paper.first .front {
-  transform: translateZ(0.4px);
+  transform: translateZ(0.6px);
 }
 .book .paper.second .front {
-  transform: translateZ(0.3px);
+  transform: translateZ(0.5px);
 }
 .book .paper.third .front {
-  transform: translateZ(0.2px);
+  transform: translateZ(0.4px);
 }
 .book .paper.fourth .front {
+  transform: translateZ(0.3px);
+}
+.book .paper.fifth .front {
+  transform: translateZ(0.2px);
+}
+.book .paper.sixth .front {
   transform: translateZ(0.1px);
 }
 .book .second-page #vara-container {
@@ -219,57 +247,51 @@ body {
   }
 }
 
-
-
-/* button */
+/* buttons */
 .button-option {
-
-	--border: 4px solid #021971;
-	appearance: none;
-	position: relative;
-	padding: 0;
-	background: transparent;
-	text-transform: uppercase;
-	letter-spacing: .2em;
-	outline: none;
-	cursor: pointer;
-	font-weight: bold;
-	border-radius: 0;
-	border: none;
+  --border: 4px solid #021971;
+  appearance: none;
+  position: relative;
+  padding: 0;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  border: none;
   margin: 20px;
 }
-	
-	button span {
-		display: block;
-		position: relative;
-		padding: 1.4em 4em;
-		background: #1641BC;
-		color: white;
-		border: var(--border);
-		transition: transform .2s ease;
-		z-index: 1;
-		will-change: transform;
-	}
-	
-	button::after {
-		content: '';
-		position: absolute;
-		top: 6px;
-		left: 6px;
-		width: calc(100% - 5px);
-		height: calc(100% - 5px);
-		background: white;
-		border: var(--border);
-	}
-	
-	button:hover span {
-		transform: translate(-3px, -3px);
-	}
-	
-  button:active span {
-		transition: transform .05s ease;
-		transform: translate(0, 0);
-	}
 
-  
+button span {
+  display: block;
+  position: relative;
+  padding: 1.4em 4em;
+  background: #1641bc;
+  color: white;
+  border: var(--border);
+  transition: transform 0.2s ease;
+  z-index: 1;
+  will-change: transform;
+}
 
+button::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  background: white;
+  border: var(--border);
+}
+
+button:hover span {
+  transform: translate(-3px, -3px);
+}
+
+button:active span {
+  transition: transform 0.05s ease;
+  transform: translate(0, 0);
+}

@@ -11,11 +11,7 @@ var posX = Math.max(80 * ratio, 30);
 $('body').css('font-size', bodyFontSize + 'px');
 fontSize.small = Math.max(fontSize.small * ratio, 7);
 fontSize.medium = Math.max(fontSize.medium * ratio, 10);
-// const images = [
-//  {
-//   img1:
-//  }
-// ]
+
 vara[0] = new Vara(
   '#vara-container',
   'https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json',
@@ -118,7 +114,6 @@ vara[2] = new Vara(
       text: 'Github.',
       y: 10,
       color: '#3f51b5',
-      id: 'link',
       x: posX,
       duration: 1500,
     },
@@ -129,9 +124,119 @@ vara[2] = new Vara(
     autoAnimation: false,
   }
 );
+
+vara[3] = new Vara(
+  '#vara-container4',
+  'https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json',
+  [
+    {
+      text: '17 Jan 2019',
+      textAlign: 'right',
+      delay: 500,
+      y: 20,
+      x: -30,
+      duration: 1500,
+      fontSize: fontSize.small,
+    },
+    {
+      text: 'Creating a Diary.',
+      y: 40,
+      x: posX,
+      duration: 4000,
+    },
+    {
+      text: 'View the library on,',
+      y: 20,
+      x: posX,
+      duration: 3500,
+    },
+    {
+      text: 'Github.',
+      y: 10,
+      color: '#3f51b5',
+      x: posX,
+      duration: 1500,
+    },
+  ],
+  {
+    strokeWidth: 2,
+    fontSize: fontSize.medium,
+    autoAnimation: false,
+  }
+);
+
+vara[4] = new Vara(
+  '#vara-container5',
+  'https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json',
+  [
+    {
+      text: '17 Jan 2019',
+      textAlign: 'right',
+      delay: 500,
+      y: 20,
+      x: -30,
+      duration: 1500,
+      fontSize: fontSize.small,
+    },
+    {
+      text: 'Creating a Diary.',
+      y: 40,
+      x: posX,
+      duration: 4000,
+    },
+    {
+      text: 'View the library on,',
+      y: 20,
+      x: posX,
+      duration: 3500,
+    },
+    {
+      text: 'Github.',
+      y: 10,
+      color: '#3f51b5',
+      x: posX,
+      duration: 1500,
+    },
+  ],
+  {
+    strokeWidth: 2,
+    fontSize: fontSize.medium,
+    autoAnimation: false,
+  }
+);
+// vara[5] = new Vara(
+//   '#vara-container6',
+//   'https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json',
+//   [
+//     {
+//       text: '17 Jan 2019',
+//       textAlign: 'right',
+//       delay: 500,
+//       y: 20,
+//       x: -30,
+//       duration: 1500,
+//       fontSize: fontSize.small,
+//     },
+
+//     {
+//       text: 'Github.',
+//       y: 10,
+//       color: '#3f51b5',
+//       id: 'link',
+//       x: posX,
+//       duration: 1500,
+//     },
+//   ],
+//   {
+//     strokeWidth: 2,
+//     fontSize: fontSize.medium,
+//     autoAnimation: false,
+//   }
+// );
 vara[2].ready(function () {
   $('.front:not(.last)').click(function () {
     var ix = $(this).parent('.paper').index();
+    console.log(ix);
     $('.book').addClass('open');
     $(this).parent('.paper').addClass('open');
     if (!played[ix]) {
