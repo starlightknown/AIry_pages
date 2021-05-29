@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  background: #35293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ellipse{
+  background-color: #16a596;
+  height: 500px;
+  width: 400px;
+  postion: relative;
+  border-radius: 50%; 
+
+box-shadow: 2px 5px 25px 11px rgba(39, 40, 53, 0.94);
+  overflow: hidden;
+}
+.x1 {
+  top: 20%;
+  left: -20%;
+  position: relative;
+  animation: animateCloud 10s linear infinite;
+}
+.x2{
+  top: 10%;
+  left: 20%;
+  position: relative;
+  animation: animateCloud 10s linear infinite;
+}
+.x3{
+  top: 30%;
+  left: 14%;
+  position: relative;
+  animation: animateCloud 10s linear infinite;
+}
+.cloud {
+  position: absolute;
+  top: 30%;
+  left: 18%;
+  width: 69px;
+  height: 25px;
+  background: #5d416d;
+  border-radius: 100px;
+}
+.cloud:after, .cloud:before {
+	content: '';
+  background: #52057b;
+	position: absolute;
+}
+.cloud:after {
+  border-radius: 100px;
+  height: 20px;
+	left: 55%;
+	top: -55%;
+	width: 18px;
+}
+.cloud:before {
+  border-radius: 200px;
+  width: 28px;
+	height: 30px;
+	right: 35%;
+	top: -60%;
+}
+.sun {
+  width: 50px;
+  height: 50px;
+  top: 30%;
+  left: 50%;
+  background: #fff;
+  border-radius: 100%;
+  position: absolute;
+  animation: glow infinite 2s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+
+.mountain1 {
+  position: relative;
+  top: 28%;
+  transform: scale(3) rotate(359deg);
+
+}
+.mountain2 {
+  position: relative;
+  bottom: -20%;
+  left: -10%;
+  transform: scale(1.5);
+}
+.mountain3 {
+  position: relative;
+  bottom: -18%;
+  left: -10%;
+  transform: scale(2);
+}
+.mountain4 {
+  position: relative;
+  bottom: -18%;
+  right: 23%;
+  transform: scale(2);
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+.missionname {
+  color: white;
+  margin-left: 22vmax;
+  font-size: 3vmax;
+  margin-top: 50vmin;
+  position: absolute;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.0s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 35% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.animated-p{
+  size: 10%;
+  font-size: 1.2vmax;
+  width: 10%;
+}

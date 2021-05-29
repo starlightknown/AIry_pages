@@ -1,7 +1,0 @@
-{
-	"extends": ["tslint-config-google"],
-	"defaultSeverity": "error",
-	"linterOptions": {
-		"exclude": ["./src/vendor/**/*.ts", "./src/lib/webgl/**/*.ts"]
-	}
-}
