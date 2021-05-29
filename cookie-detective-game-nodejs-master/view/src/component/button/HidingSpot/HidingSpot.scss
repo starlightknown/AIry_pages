@@ -1,0 +1,150 @@
+/**
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@mixin create-hiding-spot(
+  $width: 0,
+  $height: 0,
+  $imageName: 'kitchen-cabinet'
+) {
+  @include relative-size($width, $height);
+  background-image: url('../../../asset/image/hiding-spot/#{$imageName}-border.png');
+
+  .glow {
+    background-image: url('../../../asset/image/hiding-spot/#{$imageName}-white-glow.png');
+  }
+
+  .pink-glow {
+    background-image: url('../../../asset/image/hiding-spot/#{$imageName}-pink-glow.png');
+    opacity: 0;
+  }
+
+  &.glow--hidden {
+    background-image: none;
+
+    .glow {
+      opacity: 0;
+    }
+  }
+}
+
+.hiding-spot {
+  pointer-events: all;
+  position: absolute;
+  background-size: contain;
+  color: black;
+}
+
+.glow,
+.pink-glow {
+  background-size: contain;
+}
+
+.glow-hide {
+  opacity: 0;
+}
+
+// new
+.fridge {
+  @include create-hiding-spot(189, 423, 'fridge');
+}
+
+.bowls {
+  @include create-hiding-spot(289, 95, 'bowls');
+}
+
+.plates {
+  @include create-hiding-spot(180, 181, 'plates');
+}
+
+.cups {
+  @include create-hiding-spot(161, 220, 'cups');
+}
+
+.carrots {
+  @include create-hiding-spot(233, 77, 'carrots');
+}
+
+.dish-towel {
+  @include create-hiding-spot(117, 263, 'dish-towel');
+}
+
+.blue-tin {
+  @include create-hiding-spot(137, 86, 'blue-tin');
+}
+
+.cookie-jar {
+  @include create-hiding-spot(121, 111, 'cookie-jar');
+}
+
+.freezer {
+  @include create-hiding-spot(192, 223, 'freezer');
+}
+
+.cupboard {
+  @include create-hiding-spot(535, 243, 'cupboard');
+}
+
+.jars {
+  @include create-hiding-spot(223, 97, 'jars');
+}
+
+.pink-flower {
+  @include create-hiding-spot(103, 107, 'pink-flower');
+}
+
+.ketchup-bottle {
+  @include create-hiding-spot(81, 154, 'ketchup-bottle');
+}
+
+.fruit-bowl {
+  @include create-hiding-spot(162, 114, 'fruit-bowl');
+}
+
+.mustard-bottle {
+  @include create-hiding-spot(70, 112, 'mustard-bottle');
+}
+
+.yellow-flower {
+  @include create-hiding-spot(85, 88, 'yellow-flower');
+}
+
+.drawer {
+  @include create-hiding-spot(532, 119, 'drawer');
+}
+
+.pepper-mill {
+  @include create-hiding-spot(91, 192, 'pepper-mill');
+}
+
+.coffee-cups {
+  @include create-hiding-spot(101, 76, 'coffee-cups');
+}
+
+.cookbooks {
+  @include create-hiding-spot(208, 122, 'cookbooks');
+}
+
+.plant {
+  @include create-hiding-spot(118, 116, 'plant');
+}
+
+.life-saver {
+  @include create-hiding-spot(214, 142, 'life-saver');
+}
+
+.salt-shaker {
+  @include create-hiding-spot(72, 123, 'salt');
+}

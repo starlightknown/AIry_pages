@@ -1,0 +1,66 @@
+# Copyright 2020 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+trainingPhrases:
+- are you ($position 'behind the' auto=true) ($hidingSpot 'life saver' auto=true)
+- are you ($position 'behind the' auto=true) ($hidingSpot 'cookbooks' auto=true)
+- are you ($position 'behind the' auto=true) ($hidingSpot 'coffee cups' auto=true)
+- are you ($position 'behind the' auto=true) ($hidingSpot 'pepper mill' auto=true)
+- are you ($position 'in the' auto=true) ($hidingSpot 'drawer' auto=true)
+- are you ($position 'in the' auto=true) ($hidingSpot 'fruit bowl' auto=true)
+- are you ($position 'behind the' auto=true) ($hidingSpot 'ketchup bottle' auto=true)
+- are you ($position 'inside the' auto=true) ($hidingSpot 'cupboards' auto=true)
+- are you ($position 'in the' auto=true) ($hidingSpot 'cupboard' auto=true)
+- are you ($position 'in the' auto=true) ($hidingSpot 'jar' auto=true)
+- are you ($position 'in the' auto=true) ($hidingSpot 'cookie jar' auto=true)
+- are you ($position 'in the' auto=true) ($hidingSpot 'blue tin' auto=true)
+- are you ($position 'inside the' auto=true) ($hidingSpot 'fridge' auto=false)
+- are you ($position 'in the' auto=true) ($hidingSpot 'refridgerator' auto=false)
+- are you ($position 'behind the' auto=true) ($hidingSpot 'pink flower' auto=true)
+- are you ($position 'behind the' auto=true) ($hidingSpot 'flowers pot' auto=true)
+- are you ($position 'behind the' auto=true) ($hidingSpot 'flower pot' auto=true)
+- are you ($position 'in a' auto=true) ($hidingSpot 'drawer' auto=true)
+- are you ($position 'in the' auto=true) ($hidingSpot 'fruit bowl' auto=true)
+- are you ($position 'in a' auto=true) ($hidingSpot 'cupboard' auto=true)
+- are you ($position 'behind a' auto=true) ($hidingSpot 'plate' auto=true)
+- are you ($position 'behind the' auto=true) ($hidingSpot 'cups' auto=true)
+- are you ($position 'in the' auto=true) ($hidingSpot 'fridge' auto=false)
+- are you ($position 'under the' auto=true) ($hidingSpot 'pepper grinder' auto=false)
+- are you ($position 'behind the' auto=true) ($hidingSpot 'plant' auto=false)
+- are you ($position 'in the' auto=true) ($hidingSpot 'freezer' auto=false)
+- are you ($position 'in the' auto=true) ($hidingSpot 'drawer' auto=false)
+- are you hiding ($position 'behind the' auto=true) ($hidingSpot 'cups' auto=true)
+- are you hiding ($position 'in the' auto=true) ($hidingSpot 'fridge' auto=false)
+- are you hidden ($position 'behind the' auto=true) ($hidingSpot 'cups' auto=true)
+- are you hidden ($position 'in the' auto=true) ($hidingSpot 'fridge' auto=false)
+- is it ($position 'in the' auto=true) ($hidingSpot 'cup' auto=true)
+- is it ($position 'on top of the' auto=true) ($hidingSpot 'plates' auto=false)
+- is it the ($hidingSpot 'jar' auto=true)
+- ($position 'behind the' auto=true) ($hidingSpot 'pink flower' auto=true)
+- ($position 'behind the' auto=true) ($hidingSpot 'salt shaker' auto=true)
+- ($position 'in the' auto=true) ($hidingSpot 'jar' auto=true)
+- ($position 'in the' auto=true) ($hidingSpot 'cupboard' auto=true)
+- ($position 'behind the' auto=true) ($hidingSpot 'bowls' auto=true)
+- ($hidingSpot 'pink flower' auto=true)
+- ($hidingSpot 'pink flowers' auto=true)
+- ($hidingSpot 'flowers pot' auto=true)
+- ($hidingSpot 'flower pot' auto=true)
+- ($hidingSpot 'flowers' auto=true)
+- ($hidingSpot 'flower' auto=true)
+- ($hidingSpot 'bowl' auto=true)
+- ($hidingSpot 'cup' auto=true)
+- ($hidingSpot 'plates' auto=true)
+- the ($hidingSpot 'bowl' auto=false)
+- the ($hidingSpot 'cupboard' auto=true)
+- the ($hidingSpot 'jar' auto=true)

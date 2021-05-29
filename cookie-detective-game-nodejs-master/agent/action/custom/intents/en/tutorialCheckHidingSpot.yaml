@@ -1,0 +1,36 @@
+# Copyright 2020 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+trainingPhrases:
+- are you ($position 'behind the' auto=true) ($hidingSpot 'bowls' auto=true)
+- are you ($position 'in the' auto=true) ($hidingSpot 'cupboard' auto=true)
+- are you ($position 'in the' auto=true) ($hidingSpot 'jar' auto=true)
+- are you hiding ($position 'behind the' auto=true) ($hidingSpot 'bowls' auto=true)
+- are you hiding ($position 'in the' auto=true) ($hidingSpot 'cupboard' auto=true)
+- are you hiding ($position 'in the' auto=true) ($hidingSpot 'jar' auto=true)
+- are you hidden ($position 'behind the' auto=true) ($hidingSpot 'bowls' auto=true)
+- are you hidden ($position 'in the' auto=true) ($hidingSpot 'cupboard' auto=true)
+- are you hidden ($position 'in the' auto=true) ($hidingSpot 'jar' auto=true)
+- is it ($position 'behind the' auto=true) ($hidingSpot 'bowls' auto=false)
+- is it ($position 'in the' auto=true) ($hidingSpot 'cupboard' auto=true)
+- is it ($position 'in the' auto=true) ($hidingSpot 'jar' auto=true)
+- ($position 'behind the' auto=true) ($hidingSpot 'bowls' auto=false)
+- ($position 'in the' auto=true) ($hidingSpot 'cupboard' auto=true)
+- ($position 'in the' auto=true) ($hidingSpot 'jar' auto=true)
+- ($hidingSpot 'bowls' auto=false)
+- ($hidingSpot 'cupboard' auto=true)
+- ($hidingSpot 'jar' auto=true)
+- the ($hidingSpot 'bowls' auto=false)
+- the ($hidingSpot 'cupboard' auto=true)
+- the ($hidingSpot 'jar' auto=true)

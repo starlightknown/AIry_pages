@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
+     height="26.406"
+     viewBox="0 0 20 26.406">
+
+  <defs>
+    <style>
+      .question-mark {
+      fill: #fff;
+      fill-rule: evenodd;
+      filter: url(#question-mark-filter);
+      }
+    </style>
+    <filter id="question-mark-filter" x="1243" y="347.594" width="20" height="26.406"
+            filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="3" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.732"/>
+      <feFlood result="flood" flood-opacity="0.2"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="question-mark"
+        d="M1251.11,367.591h3.44v-3.335h-3.44v3.335Zm1.72-20.008a6.779,6.779,0,0,0-6.89,6.669h3.44a3.447,3.447,0,0,1,6.89,0c0,3.335-5.16,2.918-5.16,8.337h3.44c0-3.752,5.16-4.168,5.16-8.337A6.776,6.776,0,0,0,1252.83,347.583Z"
+        transform="translate(-1243 -347.594)"/>
+</svg>

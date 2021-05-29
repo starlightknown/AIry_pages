@@ -1,0 +1,80 @@
+/**
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@mixin create-disco-light(
+  $width: 0,
+  $height: 0,
+  $x: 0,
+  $y: 0,
+  $imageName: 'white-light'
+) {
+  $designWidth: 1280;
+  $designHeight: 800;
+  position: absolute;
+  $yOffset: $y - 120;
+  @include size($width/$designWidth * 100%, $height/$designHeight * 100%);
+  @include offset($x/$designWidth * 100%, $yOffset/$designHeight * 100%);
+  background-image: url('../../../asset/image/background/disco/#{$imageName}.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform-origin: center top;
+  background-position: center top;
+}
+
+.disco-lights {
+  //background-color: rgba(#686868, 0.3);
+  pointer-events: none;
+  background-image: url('../../../asset/image/background/disco/disco-bg.png');
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.white-light {
+  @include create-disco-light(417, 600, 81, 70, 'white-light');
+}
+
+.middle-light-1 {
+  @include create-disco-light(317, 456, 0, 0, 'middle-light-1');
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+
+.spotlight {
+  @include create-disco-light(516, 143, 0, 537, 'spotlight');
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+
+.middle-light-2 {
+  @include create-disco-light(392, 492, 0, 0, 'middle-light-2');
+  left: 52% !important;
+  transform: translateX(-50%);
+  opacity: 0.5;
+}
+
+.blue-light {
+  @include create-disco-light(445, 605, 757, 71, 'blue-light');
+  opacity: 0.5;
+}
+
+.orange-light {
+  @include create-disco-light(378, 605, 581, 0, 'orange-light');
+}
+
+.pink-light {
+  @include create-disco-light(378, 605, 305, 9, 'pink-light');
+  opacity: 0.5;
+}

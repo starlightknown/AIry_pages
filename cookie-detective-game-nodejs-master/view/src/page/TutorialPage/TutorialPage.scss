@@ -1,0 +1,79 @@
+/**
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+$zIndex: floor, back-cabinet, furniture, ui;
+
+.background {
+  @include aspect-ratio(1280, 800, false);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.back-cabinet {
+  position: absolute;
+  @include relative-size(1235, 307);
+  @include relative-offset(0, 238);
+  background: url(../../asset/image/tutorial/back-cabinet.png) no-repeat center
+    center;
+  background-size: contain;
+  z-index: zindex($zIndex, back-cabinet);
+}
+
+.furniture {
+  position: absolute;
+  @include relative-size(1126, 592);
+  @include relative-offset(51, 43);
+  background: url(../../asset/image/tutorial/furniture.png) no-repeat center
+    center;
+  background-size: contain;
+  z-index: zindex($zIndex, furniture);
+}
+
+//.floor {
+//	position: absolute;
+//	@include position(auto, auto, 0, 0);
+//	@include aspect-ratio(1280, 398, false);
+//	width: 100%;
+//	background: url(../../asset/image/background/confetti-floor.png) no-repeat center bottom;
+//	background-size: cover;
+//	z-index: zindex($zIndex, floor);
+//}
+
+.question {
+  position: absolute;
+  @include relative-offset(158, 88);
+  z-index: zindex($zIndex, ui);
+}
+
+.answer-options {
+  position: absolute;
+  @include position(auto, base-size(35), base-size(30), auto);
+  z-index: zindex($zIndex, ui);
+}
+
+.question-countdown {
+  position: absolute;
+  @include position(base-size(30), base-size(35), auto, auto);
+  z-index: zindex($zIndex, ui);
+}
+
+// debug skip button
+.button {
+  z-index: 3;
+}
