@@ -71,21 +71,4 @@
       animation: 2s fadeIn forwards .5s;
   }
   
-  #first {
-    background:var(--primary-color);
-  }
-  #second {
-      background: var(--complimentary-color);
-  }
   
-  #third {
-      background: var(--contrast-color);
-  }
-  
-  #fourth {
-      background: var(--light-color);
-  }
-  
-  @keyframes fadeIn {
-      100% { opacity:1 }
-  }
