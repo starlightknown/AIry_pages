@@ -41,7 +41,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  right: 0;
+  right: 20%;
   bottom: 10%;
   margin: auto;
   width: 30em;
@@ -218,3 +218,58 @@ body {
     left: 50%;
   }
 }
+
+
+
+/* button */
+.button-option {
+
+	--border: 4px solid #021971;
+	appearance: none;
+	position: relative;
+	padding: 0;
+	background: transparent;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 0;
+	border: none;
+  margin: 20px;
+}
+	
+	button span {
+		display: block;
+		position: relative;
+		padding: 1.4em 4em;
+		background: #1641BC;
+		color: white;
+		border: var(--border);
+		transition: transform .2s ease;
+		z-index: 1;
+		will-change: transform;
+	}
+	
+	button::after {
+		content: '';
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: calc(100% - 5px);
+		height: calc(100% - 5px);
+		background: white;
+		border: var(--border);
+	}
+	
+	button:hover span {
+		transform: translate(-3px, -3px);
+	}
+	
+  button:active span {
+		transition: transform .05s ease;
+		transform: translate(0, 0);
+	}
+
+  
+
