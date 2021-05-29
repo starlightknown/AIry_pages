@@ -117,9 +117,9 @@ box-shadow: 2px 5px 25px 11px rgba(39, 40, 53, 0.94);
 }
 .missionname {
   color: white;
-  margin-left: 22vmax;
-  font-size: 3vmax;
-  margin-top: 50vmin;
+  /* margin-left: 22vmax; */
+  font-size: 2.5vmax;
+  margin: 5%;
   position: absolute;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
@@ -129,6 +129,7 @@ box-shadow: 2px 5px 25px 11px rgba(39, 40, 53, 0.94);
     typing 2.0s steps(40, end),
     blink-caret .75s step-end infinite;
 }
+
 
 /* The typing effect */
 @keyframes typing {
@@ -146,4 +147,19 @@ box-shadow: 2px 5px 25px 11px rgba(39, 40, 53, 0.94);
   size: 10%;
   font-size: 1.2vmax;
   width: 10%;
+}
+
+
+.scroll-down{
+  padding-top: 40%;
+  color: white;
+  position: absolute;
+}
+
+.main-content{
+  margin-top: 100%;
+  color: white;
+  position: absolute;
+  padding: 10%;
+  text-align: center;
 }
