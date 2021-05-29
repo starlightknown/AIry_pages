@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+dist/
+.idea
+stats.json
+*/.idea
+.vscode
+*/.vscode
+.eslintcache
+.stylelintcache
+/*error.txt
+/*-debug.log
+/*-error.log

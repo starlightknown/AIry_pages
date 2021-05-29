@@ -1,0 +1,4 @@
+build/**/*.js
+build-tools/**/*.js
+src/vendor/**/*.js
+index.html

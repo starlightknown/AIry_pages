@@ -1,0 +1,98 @@
+[
+  {
+    "id": "homeKitchen",
+    "ordinal": 1,
+    "hidingSpotIds": [
+      "fridge",
+      "bowls",
+      "plates",
+      "cups",
+      "carrots",
+      "dish towel",
+      "blue tin",
+      "cookie jar",
+      "freezer",
+      "cupboard"
+    ],
+    "textQuery": "home kitchen",
+    "levelRequiredId": null,
+    "showOutlines": true,
+    "maxQuestions": 10,
+    "background": "image/level/base-kitchen/background.jpg",
+    "previewImage": "image/level/base-kitchen/preview.jpg",
+    "lottieAnimation": {
+      "winScene": "level1WinScene",
+      "loseScene": "level1LoseScene"
+    },
+    "themeId": "primary"
+  },
+  {
+    "id": "spaceStation",
+    "ordinal": 2,
+    "hidingSpotIds": [
+      "fridge",
+      "bowls",
+      "plates",
+      "cups",
+      "carrots",
+      "dish towel",
+      "blue tin",
+      "cookie jar",
+      "freezer",
+      "cupboard",
+      "pink flower",
+      "ketchup bottle",
+      "fruit bowl",
+      "mustard bottle"
+    ],
+    "textQuery": "space station",
+    "levelRequiredId": "homeKitchen",
+    "showOutlines": true,
+    "maxQuestions": 10,
+    "background": "image/level/space-station/background.jpg",
+    "previewImage": "image/level/space-station/preview.jpg",
+    "lottieAnimation": {
+      "winScene": "level2WinScene",
+      "loseScene": "level2LoseScene"
+    },
+    "themeId": "secondary"
+  },
+  {
+    "id": "underTheSea",
+    "ordinal": 3,
+    "hidingSpotIds": [
+      "fridge",
+      "bowls",
+      "plates",
+      "cups",
+      "carrots",
+      "dish towel",
+      "blue tin",
+      "cookie jar",
+      "freezer",
+      "cupboard",
+      "pink flower",
+      "ketchup bottle",
+      "fruit bowl",
+      "mustard bottle",
+      "drawer",
+      "pepper mill",
+      "coffee cups",
+      "cookbooks",
+      "plant",
+      "life saver",
+      "salt shaker"
+    ],
+    "textQuery": "under the sea",
+    "levelRequiredId": "spaceStation",
+    "showOutlines": false,
+    "maxQuestions": 10,
+    "background": "image/level/under-the-sea/background.jpg",
+    "previewImage": "image/level/under-the-sea/preview.jpg",
+    "lottieAnimation": {
+      "winScene": "level3WinScene",
+      "loseScene": "level3LoseScene"
+    },
+    "themeId": "tertiary"
+  }
+]

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26"
+     height="26.875"
+     viewBox="0 0 26 26.875">
+
+  <defs>
+    <style>
+      .time {
+      fill: #fff;
+      fill-rule: evenodd;
+      filter: url(#time-filter);
+      }
+    </style>
+    <filter id="time-filter" x="1240" y="420.125" width="26" height="26.875"
+            filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="3" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.732"/>
+      <feFlood result="flood" flood-opacity="0.2"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="time"
+        d="M1262.47,423.951l-4.61-3.832-1.29,1.519,4.61,3.831Zm-14.14-2.313-1.29-1.519-4.6,3.822,1.29,1.518Zm4.62,4.575h-1.5v5.955l4.76,2.829,0.75-1.221-4.01-2.352v-5.211Zm-0.5-3.97a8.933,8.933,0,1,0,9.02,8.933A8.976,8.976,0,0,0,1252.45,422.243Zm0,15.881a6.948,6.948,0,1,1,7.02-6.948A6.978,6.978,0,0,1,1252.45,438.124Z"
+        transform="translate(-1240 -420.125)"/>
+</svg>

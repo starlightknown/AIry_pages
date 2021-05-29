@@ -1,0 +1,97 @@
+[
+  {
+    "id": "dark",
+    "typeId": "dark",
+    "textQuery": "is it dark"
+  },
+  {
+    "id": "right",
+    "typeId": "horizontalPosition",
+    "textQuery": "is it on the right"
+  },
+  {
+    "id": "left",
+    "typeId": "horizontalPosition",
+    "textQuery": "is it on the left"
+  },
+  {
+    "id": "high",
+    "typeId": "verticalPosition",
+    "textQuery": "is it high"
+  },
+  {
+    "id": "white",
+    "typeId": "color",
+    "textQuery": "is it white"
+  },
+  {
+    "id": "blue",
+    "typeId": "color",
+    "textQuery": "is it blue"
+  },
+  {
+    "id": "pink",
+    "typeId": "color",
+    "textQuery": "is it pink"
+  },
+  {
+    "id": "yellow",
+    "typeId": "color",
+    "textQuery": "is it yellow"
+  },
+  {
+    "id": "green",
+    "typeId": "color",
+    "textQuery": "is it green"
+  },
+  {
+    "id": "orange",
+    "typeId": "color",
+    "textQuery": "is it orange"
+  },
+  {
+    "id": "black",
+    "typeId": "color",
+    "textQuery": "is it black"
+  },
+  {
+    "id": "food",
+    "typeId": "smell",
+    "textQuery": "does it smell like food"
+  },
+  {
+    "id": "table",
+    "typeId": "place",
+    "textQuery": "is it on the table"
+  },
+  {
+    "id": "shelf",
+    "typeId": "place",
+    "textQuery": "is it on a shelf"
+  },
+  {
+    "id": "fridge",
+    "typeId": "place",
+    "textQuery": "is it on the fridge"
+  },
+  {
+    "id": "counter",
+    "typeId": "place",
+    "textQuery": "is it on the counter"
+  },
+  {
+    "id": "cold",
+    "typeId": "temperature",
+    "textQuery": "is it cold"
+  },
+  {
+    "id": "small",
+    "typeId": "size",
+    "textQuery": "is it small"
+  },
+  {
+    "id": "big",
+    "typeId": "size",
+    "textQuery": "is it big"
+  }
+]

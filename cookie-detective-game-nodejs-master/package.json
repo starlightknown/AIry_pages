@@ -1,0 +1,26 @@
+{
+  "name": "cookie-detective",
+  "main": "index.js",
+  "repository": "",
+  "author": "Google",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "run-p -l dev:view dev:agent",
+    "dev:agent": "cd agent/ && yarn dev",
+    "dev:view": "cd view/ && yarn dev",
+    "build": "run-s -l build:view build:agent",
+    "build:game": "cd game/ && yarn build",
+    "build:view": "cd view/ && npm version minor && yarn build",
+    "build:agent": "cd agent/ && npm version minor && yarn build",
+    "deploy": "run-s -l deploy:view deploy:agent",
+    "deploy:agent": "cd agent/ && yarn deploy",
+    "deploy:view": "cd view/ && yarn deploy",
+    "test": "run-p -l test:view test:agent",
+    "test:agent": "cd agent/ && yarn test",
+    "test:view": "cd view/ && yarn test"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.14.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

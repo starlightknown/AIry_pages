@@ -1,0 +1,100 @@
+{
+  "levels": [
+    {
+      "id": "level-1",
+      "background": "",
+      "hidingSpots": [
+        {
+          "id": "inside-fridge",
+          "attributes": [
+            {
+              "id": "cold",
+              "value": "cold"
+            },
+            {
+              "id": "dark",
+              "value": "dark"
+            }
+          ]
+        },
+        {
+          "id": "inside-oven",
+          "attributes": [
+            {
+              "id": "warm",
+              "value": "warm"
+            },
+            {
+              "id": "dark",
+              "value": "dark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "level-2",
+      "background": "",
+      "hidingSpots": [
+        {
+          "id": "inside-fridge",
+          "attributes": [
+            {
+              "id": "cold",
+              "value": "cold"
+            },
+            {
+              "id": "dark",
+              "value": "dark"
+            }
+          ]
+        },
+        {
+          "id": "inside-oven",
+          "attributes": [
+            {
+              "id": "warm",
+              "value": "warm"
+            },
+            {
+              "id": "dark",
+              "value": "dark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "level-3",
+      "background": "",
+      "hidingSpots": [
+        {
+          "id": "inside-fridge",
+          "attributes": [
+            {
+              "id": "cold",
+              "value": "cold"
+            },
+            {
+              "id": "dark",
+              "value": "dark"
+            }
+          ]
+        },
+        {
+          "id": "inside-oven",
+          "attributes": [
+            {
+              "id": "warm",
+              "value": "warm"
+            },
+            {
+              "id": "dark",
+              "value": "dark"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

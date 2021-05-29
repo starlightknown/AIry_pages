@@ -1,0 +1,4 @@
+{
+  "templatePath": "./build-tools/template,./node_modules/vue-transition-component/template",
+  "destination": "./src/component"
+}

@@ -1,0 +1,112 @@
+/**
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.hiding-spot-container {
+  pointer-events: none;
+}
+
+// new
+.fridge {
+  @include relative-offset(889, 360);
+}
+
+.bowls {
+  @include relative-offset(370, 298);
+}
+
+.plates {
+  @include relative-offset(607, 212);
+}
+
+.cups {
+  @include relative-offset(237, 172);
+}
+
+.carrots {
+  @include relative-offset(221, 430);
+}
+
+.dish-towel {
+  @include relative-offset(192, 557);
+}
+
+.blue-tin {
+  @include relative-offset(952, 162);
+}
+
+.cookie-jar {
+  @include relative-offset(1045, 128);
+}
+
+.freezer {
+  @include relative-offset(894, 188);
+}
+
+.cupboard {
+  @include relative-offset(128, 152);
+}
+
+.jars {
+  @include relative-offset(262, 400);
+}
+
+.pink-flower {
+  @include relative-offset(716, 502);
+}
+
+.ketchup-bottle {
+  @include relative-offset(196, 411);
+}
+
+.fruit-bowl {
+  @include relative-offset(743, 529);
+}
+
+.mustard-bottle {
+  @include relative-offset(585, 381);
+}
+
+.yellow-flower {
+  @include relative-offset(828, 382);
+}
+
+.drawer {
+  @include relative-offset(231, 446);
+}
+
+.pepper-mill {
+  @include relative-offset(891, 448);
+}
+
+.coffee-cups {
+  @include relative-offset(834, 441);
+}
+
+.cookbooks {
+  @include relative-offset(539, 487);
+}
+
+.plant {
+  @include relative-offset(55, 517);
+}
+
+.life-saver {
+  @include relative-offset(371, 676);
+}
+
+.salt-shaker {
+  @include relative-offset(804, 385);
+}

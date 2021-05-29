@@ -1,0 +1,32 @@
+{
+  "samePlayerConfirmation": {
+    "route": "same-player-confirmation"
+  },
+  "tutorial": {
+    "route": "tutorial"
+  },
+  "playerSelection": {
+    "route": "player-selection"
+  },
+  "colorSelection": {
+    "route": "color-selection"
+  },
+  "animalSelection": {
+    "route": "animal-selection"
+  },
+  "levelSelection": {
+    "route": "level-selection"
+  },
+  "hidingModeSelection": {
+    "route": "hiding-mode-selection"
+  },
+  "game": {
+    "route": "game"
+  },
+  "gameEnd": {
+    "route": "game-result"
+  },
+  "gameExit": {
+    "route": "game-exit"
+  }
+}
