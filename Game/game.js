@@ -26,20 +26,20 @@ vara[0] = new Vara(
       fontSize: fontSize.small,
     },
     {
-      text: 'Start the year with something cool.',
+      text: 'This is a Beautiful Game of Recognize the Emotions!',
       y: 40,
       x: posX,
       duration: 3000,
     },
     {
-      text: 'Like with a library,',
+      text: 'Read the Question Prompt and Select from the available options!',
       id: 'sphinx',
       x: posX,
       delay: 1000,
       duration: 4500,
     },
     {
-      text: '..... that can animate text writing',
+      text: 'Keep track of your score & enjoy the game!',
       id: 'end',
       color: '#3f51b5',
       delay: 1000,
@@ -58,7 +58,7 @@ vara[1] = new Vara(
   'https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json',
   [
     {
-      text: 'Your father gifted you a beautiful pen on your birthday,And one of your friend broke your pen. How should you feel about it?',
+      text: 'Your father gifted you a beautiful pen on your birthday, And one of your friend broke your pen. How should you feel about it?',
       textAlign: 'left',
       delay: 500,
       y: 20,
@@ -159,7 +159,7 @@ vara[4] = new Vara(
   'https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json',
   [
     {
-      text: 'I studied hard for his test. And I scored good marks in the test. How would I feel about this?',
+      text: 'I studied hard for this test. And I scored good marks in the test. How would I feel about this?',
       textAlign: 'left',
       delay: 500,
       y: 20,

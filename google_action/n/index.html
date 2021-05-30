@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/wired-elements@2.0.5/lib/wired-elements-bundled.js"></script>
+
+     <!-- Load Interactive Canvas JavaScript -->
+     <script src="https://www.gstatic.com/assistant/interactivecanvas/api/interactive_canvas.min.js"></script>
+  </head>  
+  
+  <body>
+    <wired-card elevation="3">
+      <p id="text-space">
+        Airy pages - for parents
+      </p>
+      <p id="sub-text">On starting the game, you'll few quetions. You need to figure out which would be the best way to teach your autistic kids and speak/type your answer. Good Luck!</p>
+      <wired-button id="start-button">Start</wired-button>
+    </wired-card>
+    
+    <script>
+      let startButton = document.getElementById('start-button');
+      startButton.addEventListener('click', function(){
+        interactiveCanvas.sendTextQuery('yes');
+      })
+
+      const callbacks = {
+        onUpdate(data) {
+          console.log(data)
+           if ('question' in data){
+            document.getElementById('text-space').textContent = JSON.stringify(data.question);
+            document.getElementById('text-space').style.marginBottom = '50px';
+            document.getElementById('sub-text').style.display = 'none';
+            document.getElementById('start-button').style.display = 'none';
+           }
+          },
+        };
+        // called by the Interactive Canvas web app once web app has loaded to
+        // register callbacks
+        interactiveCanvas.ready(callbacks);
+    </script>
+  </body>
+  
+</html>
