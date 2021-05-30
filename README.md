@@ -58,12 +58,13 @@ The following are ways in which one can play the game:
 https://youtu.be/pSMLpuBr-sQ
 
 <hr>
-## How are we tackling the problem? 
 
-- We are using google actions interactive canvas for the quiz app so that it will help the autistic children with language and communication skills along with emotion recognition in daily life
+#### `How are we tackling the problem?` 
+
+- We are using google actions interactive canvas for the quiz app so that it will help the autistic children with language and communication skills along with emotion recognition in daily life.
 - We are helping parents to teach their autistic children in a good way so that they know more about their child and help them with autism
 
-## Technologies Used 
+#### `Technologies Used `
 
 - HTML
 - CSS 
