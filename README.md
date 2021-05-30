@@ -55,7 +55,6 @@ The following are ways in which one can play the game:
 
 ![image](https://user-images.githubusercontent.com/56751963/120093752-e9847200-c139-11eb-9aa6-610d8d0ec3b5.png)
 ![image](https://user-images.githubusercontent.com/56751963/120093839-73ccd600-c13a-11eb-9339-2dd53fd46872.png)
-![image](https://user-images.githubusercontent.com/56751963/120093855-90690e00-c13a-11eb-8283-7f17c1c30508.png)
 ![image](![Screenshot from 2021-05-30 12-15-01](https://user-images.githubusercontent.com/74637789/120094949-d7f29880-c140-11eb-9cf2-eea1145208e7.png)
 )
 ![image](![Screenshot from 2021-05-30 12-10-57](https://user-images.githubusercontent.com/74637789/120094823-3ec38200-c140-11eb-9daa-37b14f20a7dc.png)
@@ -70,14 +69,23 @@ https://youtu.be/pSMLpuBr-sQ
 
 #### `How are we tackling the problem?` 
 
-- We are using google actions interactive canvas for the quiz app so that it will help the autistic children with language and communication skills along with emotion recognition in daily life.
-- We are helping parents to teach their autistic children in a good way so that they know more about their child and help them with autism
+To tackle this problem that children from all over the Globe are facing we decided to build a Web-App that would help the children facing issues understanding social cues & directions, understand it much better!
+Autistic children do, on average, spend more time playing video games than neurotypicals; 41.4% of autistic adolescents and children spend free time playing video games compared to 18% of their neurotypical peers.
+Therefore making use of this statistic we decided that a game would be the best route to help the children improve their quality of life.
+
+🎮What it does:
+The Web-Page will help the children improve their social skills and ability to recognize situations using a simple game logic where the children will be prompted with a particular situation in the form of text on the book, & then out of 2 options, they will have to choose what best describes the emotion that would be appropriate for the situation. We also have another app with Voice Recognition using Google-Actions specifically designed for the parents of autistic children. SInce the children usually require more than usual care it is harder on the parents, & to help ease their situation we built this app as well.
 
 #### `Technologies Used `
 
-- HTML
-- CSS 
-- JAVASCRIPT
-- GOOGLE ACTIONS FOR INTERACTIVE CANVAS
-- GOOGLE VOICE ACTIONS
-- DIALOG FLOW
+🛠How we built it
+HTML5, CSS3, JavaScript,Threejs, & Google-Actions!
+
+### 🚩Challenges we ran into:
+1) The main Idea which we wanted to implement, we took a long time to come up with it mainly because we didn't want to implement an idea that wouldn't help the children or not improve the quality of their life, especially since it is such a prevalent and global problem.
+2) The Features that we decided to implement were very complex, so we decided to make it such that we decrease the complexity of the features but we made sure to implement them.
+
+### 🎉Accomplishments that we're proud of:
+1)We learned a lot in a space of 2 days, It helped us explore new technologies like Google Actions for the parents' App, Threejs for the Globe & New CSS Attributes & terms using which we designed the Book-Game of the Application!
+2) It was a surreal experience for the first time hackers especially because we understood how a Hackathon works, How to manage time & utilizing our Web Development skills to the fullest, all of this while working on learning something new at the same time!
+
