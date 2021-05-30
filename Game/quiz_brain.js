@@ -6,78 +6,132 @@ let score;
 
 const questions = [
   {
-    title:
-      'Your father gifted you a beautiful pen on your birthday. And one of your friend broke your pen. How should you feel about it?',
-    options: ['Angry', 'Happy'],
-    answer: '0',
+    title: 'WWW stands for ?',
+    options: [
+      'World Whole Web',
+      'Wide World Web',
+      'Web World Wide',
+      'World Wide Web',
+    ],
+    answer: '3',
     score: 1,
   },
   {
     title:
-      'You had a pet dog whose name was Rex. He was sick since last two weeks. And after some days he died. How should you feel about it?',
-    options: ['Surprised', 'Sad'],
+      'Which of the following are components of Central Processing Unit (CPU) ?',
+    options: [
+      'Arithmetic logic unit, Mouse',
+      'Arithmetic logic unit, Control unit',
+      'Arithmetic logic unit, Integrated Circuits',
+      'Control Unit, Monitor',
+    ],
+    answer: '1',
+    score: 1,
+  },
+  {
+    title: 'Which among following first generation of computers had ?',
+    options: [
+      'Vaccum Tubes and Magnetic Drum',
+      'Integrated Circuits',
+      'Magnetic Tape and Transistors',
+      'All of above',
+    ],
+    answer: '0',
+    score: 1,
+  },
+  {
+    title: 'Where is RAM located ?',
+    options: [
+      'Expansion Board',
+      'External Drive',
+      'Mother Board',
+      'All of above',
+    ],
+    answer: '2',
+    score: 1,
+  },
+  {
+    title: 'If a computer has more than one processor then it is known as ?',
+    options: [
+      'Uniprocess',
+      'Multiprocessor',
+      'Multithreaded',
+      'Multiprogramming',
+    ],
     answer: '1',
     score: 1,
   },
   {
     title:
-      "One day I got late for my school. I was expecting to get scolded by our teacher but instead I got praised for helping the old lady to cross the road. I wasn't expecting that. How should I feel about this?",
-    options: ['Angry', 'Surprised'],
+      'If a computer provides database services to other, then it will be known as ?',
+    options: [
+      'Web server',
+      'Application server',
+      'Database server',
+      'FTP server',
+    ],
+    answer: '2',
+    score: 1,
+  },
+  {
+    title: 'Full form of URL is ?',
+    options: [
+      'Uniform Resource Locator',
+      'Uniform Resource Link',
+      'Uniform Registered Link',
+      'Unified Resource Link',
+    ],
+    answer: '0',
+    score: 1,
+  },
+  {
+    title: 'In which of the following form, data is stored in computer ?',
+    options: ['Decimal', 'Binary', 'HexaDecimal', 'Octal'],
     answer: '1',
     score: 1,
   },
   {
-    title:
-      'I studied hard for his test. And he scored good marks in the test. How would I feel about this?',
-    options: ['Happy', 'Angry'],
-    answer: '0',
+    title: 'Which level language is Assembly Language ?',
+    options: [
+      'high-level programming language',
+      'medium-level programming language',
+      'low-level programming language',
+      'machine language',
+    ],
+    answer: '2',
     score: 1,
   },
-  // {
-  //   title:
-  //   options:
-  //   answer:
-  //   score:
-  // },
-  // {
-  //   title:
-
-  //   options:
-  //   answer:
-  //   score:
-  // },
-  // {
-  //   title:
-  //   options:
-
-  //   answer:
-  //   score:
-  // },
-  // {
-  //   title:
-  //   options:
-  //   answer:
-  //   score:
-  // },
-  // {
-  //   title:
-  //   options: [
-
-  //   ],
-  //   answer:
-  //   score:
-  // },
-  // {
-  //   title:
-  //   options:
-  //   answer:
-  //   score:
-  // },
+  {
+    title: 'Documents, Movies, Images and Photographs etc are stored at a ?',
+    options: ['Application Sever', 'Web Sever', 'Print Server', 'File Server'],
+    answer: '3',
+    score: 1,
+  },
 ];
 
 function restartScreen() {
   document.querySelector('.quiz-heading').innerHTML = `Score : ${score}`;
+  const card = document.querySelector('.question-card');
+  card.innerHTML = '<ul>';
+  questions.forEach((ques) => {
+    const html = `
+        <li>${ques.title} <div class="answer-label">${
+      ques.options[ques.answer]
+    }</div></li>
+        `;
+    card.innerHTML += html;
+  });
+  card.innerHTML += '</ul>';
+  document.querySelector('.answer-key').style.display = 'block';
   document.querySelector('button').style.display = 'block';
+}
+
+function resetradio() {
+  document.querySelectorAll('[type="radio"]').forEach((radio) => {
+    radio.removeAttribute('disabled');
+  });
+  res.setAttribute('class', 'idle');
+  res.innerHTML = 'Empty';
 }
 
 function evaluate() {
@@ -133,7 +187,26 @@ function handleSubmit(e) {
 }
 function init() {
   document.body.innerHTML = `
-        
+        <h1 class="quiz-heading">Quiz</h1>
+        <div class="app-body">
+            <h1 class="answer-key">Answer Key</h1>
+            <div class="question-card">
+                <h2 id='question'>Question</h2>
+                <form>
+                    <input type="radio" id="op1" name="op" value="0">
+                    <label for="op1">op1</label><br>
+                    <input type="radio" id="op2" name="op" value="1">
+                    <label for="op2">op2</label><br>
+                    <input type="radio" id="op3" name="op" value="2">
+                    <label for="op3">op3</label><br>
+                    <input type="radio" id="op4" name="op" value="3">
+                    <label for="op4">op4</label><br>
+                    <div id = "res" class="idle">Empty</div><br>
+                    <input type="submit" name="submit" value = 'Submit' class = "submit"/>
+                </form>
+            </div>
+            <button>Restart</button>
+        </div>
     `;
   question = document.querySelector('#question');
   form = document.querySelector('form');

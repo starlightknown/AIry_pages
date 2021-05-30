@@ -216,10 +216,10 @@ vara[4] = new Vara(
 //     autoAnimation: false,
 //   }
 // );
+
 vara[2].ready(function () {
-  $('.front:not(.last)').click(function () {
+  $('.front:not(.last)').click(function pageTurn() {
     var ix = $(this).parent('.paper').index();
-    console.log(ix);
     $('.book').addClass('open');
     $(this).parent('.paper').addClass('open');
     if (!played[ix]) {
@@ -245,8 +245,170 @@ vara[2].ready(function () {
       });
     }
   });
+
+  // Logic for Going Back on Pages
   $('.back').click(function () {
     if ($(this).parent('.paper').index() == 0) $('.book').removeClass('open');
     $(this).parent('.paper').removeClass('open');
   });
 });
+
+let form;
+let res;
+let qno;
+let score;
+
+const questions = [
+  {
+    title:
+      'Your father gifted you a beautiful pen on your birthday. And one of your friend broke your pen. How should you feel about it?',
+    options: ['Angry', 'Happy'],
+    answer: '0',
+    score: 1,
+  },
+  {
+    title:
+      'You had a pet dog whose name was Rex. He was sick since last two weeks. And after some days he died. How should you feel about it?',
+    options: ['Surprised', 'Sad'],
+    answer: '1',
+    score: 1,
+  },
+  {
+    title:
+      "One day I got late for my school. I was expecting to get scolded by our teacher but instead I got praised for helping the old lady to cross the road. I wasn't expecting that. How should I feel about this?",
+    options: ['Angry', 'Surprised'],
+    answer: '1',
+    score: 1,
+  },
+  {
+    title:
+      'I studied hard for his test. And he scored good marks in the test. How would I feel about this?',
+    options: ['Happy', 'Angry'],
+    answer: '0',
+    score: 1,
+  },
+  // {
+  //   title:
+  //   options:
+  //   answer:
+  //   score:
+  // },
+  // {
+  //   title:
+
+  //   options:
+  //   answer:
+  //   score:
+  // },
+  // {
+  //   title:
+  //   options:
+
+  //   answer:
+  //   score:
+  // },
+  // {
+  //   title:
+  //   options:
+  //   answer:
+  //   score:
+  // },
+  // {
+  //   title:
+  //   options: [
+
+  //   ],
+  //   answer:
+  //   score:
+  // },
+  // {
+  //   title:
+  //   options:
+  //   answer:
+  //   score:
+  // },
+];
+
+function evaluate() {
+  if (form.op.value == questions[qno].answer) {
+    res.setAttribute('class', 'correct');
+    res.innerHTML = 'Correct';
+    score += questions[qno].score;
+  } else {
+    res.setAttribute('class', 'incorrect');
+    res.innerHTML = 'Incorrect';
+  }
+  document.querySelectorAll('[type="button"]').forEach((button) => {
+    button.setAttribute('disabled', '');
+  });
+}
+
+function getNextQuestion() {
+  qno++;
+  ques = questions[qno];
+  $('.front:not(.last)').click(function pageTurn() {
+    var ix = $(this).parent('.paper').index();
+    $('.book').addClass('open');
+    $(this).parent('.paper').addClass('open');
+    if (!played[ix]) {
+      vara[ix].playAll();
+      vara[ix].animationEnd(function (i, o) {
+        played[ix] = 1;
+        if (i == 'link') {
+          var group = o.container;
+          var rect = vara[2].createNode('rect', {
+            x: 0,
+            y: 0,
+            width: o.container.getBoundingClientRect().width,
+            height: o.container.getBoundingClientRect().height,
+            fill: 'transparent',
+          });
+          group.appendChild(rect);
+          $(rect).css('cursor', 'pointer');
+          $(rect).click(function () {
+            console.log(true);
+            document.querySelector('#link').click();
+          });
+        }
+      });
+    }
+  });
+}
+
+function handleSubmit(e) {
+  e.preventDefault();
+  if (!form.op.value) {
+    alert('Please select an option');
+  } else if (form.submit.classList.contains('submit')) {
+    evaluate();
+    form.submit.classList.remove('submit');
+    form.submit.value = 'Next';
+    form.submit.classList.add('next');
+  } else if (
+    qno < questions.length - 1 &&
+    form.submit.classList.contains('next')
+  ) {
+    getNextQuestion();
+
+    form.submit.classList.remove('next');
+    form.submit.value = 'Submit';
+    form.submit.classList.add('submit');
+    form.reset();
+  } else if (form.submit.classList.contains('next')) {
+    form.submit.classList.remove('next');
+    form.submit.value = 'Submit';
+    form.submit.classList.add('submit');
+    form.reset();
+  }
+}
+function init() {
+  form = document.querySelector('form-control');
+  res = document.querySelector('#res');
+  qno = -1;
+  score = 0;
+  form.addEventListener('submit', handleSubmit);
+  form.addEventListener('click', init);
+  getNextQuestion();
+}
+document.querySelector('button').addEventListener('click', init);
+init();
