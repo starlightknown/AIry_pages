@@ -1,4 +1,4 @@
-## AIry Pages 
+## Airy Pages 
 
 <p align="center">
     ✨ Welcome to Airy Pages ✨ <br />
