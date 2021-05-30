@@ -6,8 +6,8 @@
   position: absolute;
   color: #F6C1BC;
   font-family: Verdana;
-  margin-left: 40%;
-  margin-top: 2%;
+  margin-left: 45%;
+  margin-top: 5%;
 }
 
 .system {
@@ -143,4 +143,9 @@ li a:hover:not(.active) {
 
 .active {
   background-color: #04AA6D;
+}
+.heading {
+  text-align: center;
+  color: yellow;
+  margin: 20px auto;
 }
