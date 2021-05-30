@@ -1,0 +1,40 @@
+body {
+    margin: 120px 0 0 0;
+    padding: 16px 8px;
+    box-sizing: border-box;
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+  
+  wired-card {
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+    background-color: #FCE77D;
+    text-align: center;
+  }
+  
+  wired-button {
+    background: #F96167;
+    color: #FCE77D;
+    font-size: 30px;
+  }
+  
+  wired-input {
+    font-family: inherit;
+  }
+  
+  #text-space {
+    color: #F96167;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 0px;
+  }
+  
+  #sub-text {
+    color: #F96167;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+  }
