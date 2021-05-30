@@ -1,10 +1,13 @@
 #globe {
+  margin-top: 2rem;
   cursor: move;
 }
 
 #current {
   position: absolute;
   color: #f6c1bc;
+  top: 0;
+  right: 80%;
   font-family: Verdana;
   margin-left: 45%;
   margin-top: 5%;
@@ -50,13 +53,13 @@
   }
   80% {
     padding-top: 7%;
-    border-bottom: 0px solid #fff;
+    border-bottom: 0px transparent #fff;
     opacity: 0.5;
     text-shadow: 2px 2px 5px #fff;
   }
   100% {
     padding-top: 1%;
-    border-bottom: 0.35em solid #fff;
+    border-bottom: 0.2em transparent #fff;
     opacity: 1;
     text-shadow: 0;
   }
@@ -71,13 +74,13 @@
   }
   80% {
     padding-top: 7%;
-    border-bottom: 0px solid #fff;
+    border-bottom: 0px transparent #fff;
     opacity: 0.5;
     text-shadow: 2px 2px 200px rgba(255, 255, 255, 1);
   }
   100% {
     padding-top: 0%;
-    border-bottom: 0.2em solid #ef9a9a;
+    border-bottom: 0.2em transparent;
     opacity: 1;
     text-shadow: 200px 200px 200px rgba(255, 255, 255, 0);
   }
