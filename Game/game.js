@@ -26,20 +26,20 @@ vara[0] = new Vara(
       fontSize: fontSize.small,
     },
     {
-      text: 'Start the year with something cool.',
+      text: 'This is a Beautiful Game of Recognize the Emotions!',
       y: 40,
       x: posX,
       duration: 3000,
     },
     {
-      text: 'Like with a library,',
+      text: 'Read the Question Prompt and Select from the available options!',
       id: 'sphinx',
       x: posX,
       delay: 1000,
       duration: 4500,
     },
     {
-      text: '..... that can animate text writing',
+      text: 'Keep track of your score & enjoy the game!',
       id: 'end',
       color: '#3f51b5',
       delay: 1000,
