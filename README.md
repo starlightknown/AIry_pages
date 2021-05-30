@@ -7,7 +7,7 @@
 </p>
 
 #### `♦ About the Game`
-The game basically focuses on help improving decision makming for autism children. It gives a small paragraph thta contains some emotion and feelings and there will be two options, out of it the children have to choose the correct feeling or emotion. This will eventually help them to improve their decision making skills na d overcome the syndrome.
+The game basically focuses on help improving decision makming for autism children. It gives a small paragraph thta contains some emotion and feelings and there will be two options, out of it the children have to choose the correct feeling or emotion. This will eventually help them to improve their decision making skills and overcome the syndrome.
 
   <br>
   
