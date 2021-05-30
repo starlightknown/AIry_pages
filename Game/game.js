@@ -58,22 +58,22 @@ vara[1] = new Vara(
   'https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json',
   [
     {
-      text: '16 Jan 2019',
-      textAlign: 'right',
+      text: 'Your father gifted you a beautiful pen on your birthday,And one of your friend broke your pen. How should you feel about it?',
+      textAlign: 'left',
       delay: 500,
       y: 20,
-      x: -30,
+      x: 45,
       duration: 1500,
       fontSize: fontSize.small,
     },
     {
-      text: 'Try to create something else.',
+      text: 'Your Options are',
       y: 40,
       x: posX,
       duration: 4000,
     },
     {
-      text: 'Like a diary or a todo list.',
+      text: '1)Angry or 2)Happy',
       y: 40,
       x: posX,
       duration: 3500,

@@ -175,17 +175,17 @@ body {
   transform: translateZ(-1px);
 }
 .book .open.third .back {
-  background: url(../images/funny.jpg) center/cover no-repeat;
-  background-size: 300px 500px;
+  background: url(../images/sad.jpg) center/cover no-repeat;
+  background-size: 300px 300px;
   transform: translateZ(-2px);
 }
 .book .open.fourth .back {
-  background: url(../images/sad.jpg) center/cover no-repeat;
+  background: url(../images/surprised.jpg) center/cover no-repeat;
   background-size: 300px 300px;
   transform: translateZ(-3px);
 }
 .book .open.fifth .back {
-  background: url(../images/surprised.jpg) center/cover no-repeat;
+  background: url(../images/happy.jpg) center/cover no-repeat;
   background-size: 300px 300px;
   transform: translateZ(-4px);
 }
