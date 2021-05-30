@@ -25,7 +25,7 @@
     Early recognition, as well as behavioural, educational and family therapies may reduce symptoms and support development and learning.
   </p>
   <br>
-  <br>
+  
   <h3>What are its symptoms?</h3>
   <p>
     People may experience the following symptoms: <br>
@@ -40,9 +40,17 @@
     Inappropriate Social Interaction.<br>
 
 </p>
-<br />
 
 ## How are we tackling the problem? 
 
 - We are using google actions interactive canvas for the quiz app so that it will help the autistic children with language and communication skills along with emotion recognition in daily life
 - We are helping parents to teach their autistic children in a good way so that they know more about their child and help them with autism
+
+## Technologies Used 
+
+- HTML
+- CSS 
+- JAVASCRIPT
+- GOOGLE ACTIONS FOR INTERACTIVE CANVAS
+- GOOGLE VOICE ACTIONS
+- DIALOG FLOW
