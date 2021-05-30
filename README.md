@@ -57,8 +57,7 @@ The following are ways in which one can play the game:
 
 https://youtu.be/pSMLpuBr-sQ
 
-=======
-
+<hr>
 ## How are we tackling the problem? 
 
 - We are using google actions interactive canvas for the quiz app so that it will help the autistic children with language and communication skills along with emotion recognition in daily life
