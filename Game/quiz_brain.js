@@ -21,7 +21,7 @@ const questions = [
   },
   {
     title:
-      "One day I got late for my school. I was expecting to get scolded by our teacher but instead I got praised for helping the old lady to cross the road which made me late. I wasn't expecting that. How should I feel about this?",
+      "One day I got late for my school. I was expecting to get scolded by our teacher but instead I got praised for helping the old lady to cross the road. I wasn't expecting that. How should I feel about this?",
     options: ['Angry', 'Surprised'],
     answer: '1',
     score: 1,
