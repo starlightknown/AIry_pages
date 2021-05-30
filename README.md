@@ -6,6 +6,13 @@
     ✨ Welcome to Airy Pages ✨ <br />
 </p>
 
+https://aumega-vision.web.app/ - built using interactive canvas and google actions for parents
+
+https://starlightknown.github.io/AIry_pages/ - built for kids with autism
+
+https://dialogflow.cloud.google.com/#/agent/aumega-vision/ - test the app in dialog flow
+
+
 #### `♦ About the Game`
 The game basically focuses on help improving decision makming for autism children. It gives a small paragraph thta contains some emotion and feelings and there will be two options, out of it the children have to choose the correct feeling or emotion. This will eventually help them to improve their decision making skills and overcome the syndrome.
 
