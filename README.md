@@ -18,6 +18,13 @@
   ![wrong](https://user-images.githubusercontent.com/56751927/120094007-6bc16600-c13b-11eb-9042-7985203a277f.png)
   
    <br>
+   
+   ![parent](![Screenshot from 2021-05-30 11-43-01](https://user-images.githubusercontent.com/74637789/120094154-5a2c8e00-c13c-11eb-9b9d-784107df0452.png)
+)
+
+![parent2](![![Screenshot from 2021-05-30 11-42-38](https://user-images.githubusercontent.com/74637789/120094165-74ff0280-c13c-11eb-9915-06f52eb4099c.png)
+)
+)
   <h3>What is Autism?</h3>
   <p>Also called: autism spectrum disorder, is a serious developmental disorder that impairs the ability to communicate and interact.
     Autism spectrum disorder impacts the nervous system and affects the overall cognitive, emotional, social and physical health of the affected individual.
