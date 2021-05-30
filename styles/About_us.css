@@ -35,8 +35,15 @@ body {
   margin-bottom: 2rem;
   width: 100%;
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 7rem;
   height: 2.6rem;
+}
+.logo {
+  width: 15rem;
+  height: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .title {
