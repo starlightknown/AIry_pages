@@ -159,7 +159,7 @@ vara[4] = new Vara(
   'https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json',
   [
     {
-      text: 'I studied hard for this test. And I scored good marks in the test. How would I feel about this?',
+      text: 'I studied hard for his test. And I scored good marks in the test. How would I feel about this?',
       textAlign: 'left',
       delay: 500,
       y: 20,
