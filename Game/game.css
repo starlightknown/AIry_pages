@@ -19,6 +19,13 @@ body {
   width: 60%;
   margin: 20px auto;
 }
+.logo {
+  width: 15rem;
+  height: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .v-center {
   display: inline-block;
   vertical-align: middle;
