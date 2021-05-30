@@ -1,5 +1,8 @@
 ## Airy Pages 
 
+![header](https://user-images.githubusercontent.com/56751927/120093900-daea8a80-c13a-11eb-962d-ec382efd2f93.png)
+
+
 <p align="center">
     ✨ Welcome to Airy Pages ✨ <br />
     <h3>About the Game</h3>
@@ -8,7 +11,13 @@
     eventually help them to improve their decision making skills na d overcome the syndrome.
   </p>
   <br>
+  
+  ![correct](https://user-images.githubusercontent.com/56751927/120094001-6401c180-c13b-11eb-8321-edab76fac87b.png)
   <br>
+  
+  ![wrong](https://user-images.githubusercontent.com/56751927/120094007-6bc16600-c13b-11eb-9042-7985203a277f.png)
+  
+   <br>
   <h3>What is Autism?</h3>
   <p>Also called: autism spectrum disorder, is a serious developmental disorder that impairs the ability to communicate and interact.
     Autism spectrum disorder impacts the nervous system and affects the overall cognitive, emotional, social and physical health of the affected individual.
