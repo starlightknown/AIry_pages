@@ -20,19 +20,17 @@ The game basically focuses on help improving decision makming for autism childre
   <br>
   
 #### `🙄 What are its symptoms?`
-  <p>
-    People may experience the following symptoms: <br>
-    <br>
-    Abnormal Body Posturing or Facial Expressions.<br>
-    Abnormal Tone of Voice.<br>
-    Avoidance of Eye Contact or Poor Eye Contact.<br>
-    Behavioral Disturbances.<br>
-    Deficits in Language Comprehension.<br>
-    Delay in Learning to Speak.<br>
-    Flat or Monotonous Speech.<br>
-    Inappropriate Social Interaction.<br>
+- People may experience the following symptoms: <br>
+- Abnormal Body Posturing or Facial Expressions.<br>
+- Abnormal Tone of Voice.<br>
+- Avoidance of Eye Contact or Poor Eye Contact.<br>
+- Behavioral Disturbances.<br>
+- Deficits in Language Comprehension.<br>
+- Delay in Learning to Speak.<br>
+- Flat or Monotonous Speech.<br>
+- Inappropriate Social Interaction.<br>
 
-</p>
+
  
 <br />
 
