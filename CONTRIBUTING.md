@@ -1,5 +1,5 @@
 # What kinds of contributions are we looking for?
-We love receiving contributions from our community. Any assistance you can provide with regards to bug fixes, feature enhancements, and documentation is more than welcome.
+We love receiving contributions from anyone who would love to contribute. Any assistance you can provide with regards to bug fixes, feature enhancements, and documentation is more than welcome.
 
 # Contributing
 
